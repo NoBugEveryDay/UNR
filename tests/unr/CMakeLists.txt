@@ -1,0 +1,108 @@
+include_directories(${CMAKE_SOURCE_DIR}/include)
+link_libraries(unr)
+
+add_executable(01_unr_init 01_unr_init.c)
+install(TARGETS 01_unr_init)
+add_test(NAME unr_init COMMAND ${LAUNCH_1_CMD} 01_unr_init)
+
+add_executable(02_unr_mem_reg 02_unr_mem_reg.c)
+install(TARGETS 02_unr_mem_reg)
+add_test(NAME unr_mem_reg COMMAND ${LAUNCH_1_CMD} 02_unr_mem_reg)
+
+add_executable(03_unr_mem_reg_sync 03_unr_mem_reg_sync.c)
+install(TARGETS 03_unr_mem_reg_sync)
+add_test(NAME unr_mem_reg_sync COMMAND ${LAUNCH_1_CMD} 03_unr_mem_reg_sync)
+
+add_executable(04_unr_blk_reg 04_unr_blk_reg.c)
+install(TARGETS 04_unr_blk_reg)
+add_test(NAME unr_blk_reg COMMAND ${LAUNCH_1_CMD} 04_unr_blk_reg)
+
+add_executable(11_unr_blk_rdma_plan 11_unr_blk_rdma_plan.c)
+install(TARGETS 11_unr_blk_rdma_plan)
+add_test(NAME unr_blk_rdma_plan COMMAND ${LAUNCH_2_CMD} 11_unr_blk_rdma_plan)
+
+add_executable(12_unr_blk_rdma_plan_2start 12_unr_blk_rdma_plan_2start.c)
+install(TARGETS 12_unr_blk_rdma_plan_2start)
+add_test(NAME unr_blk_rdma_plan_2start COMMAND ${LAUNCH_2_CMD} 12_unr_blk_rdma_plan_2start)
+
+add_executable(13_unr_blk_rdma_plan_2destroy 13_unr_blk_rdma_plan_2destroy.c)
+install(TARGETS 13_unr_blk_rdma_plan_2destroy)
+add_test(NAME unr_blk_rdma_plan_2destroy COMMAND ${LAUNCH_2_CMD} 13_unr_blk_rdma_plan_2destroy)
+
+add_executable(14_unr_blk_rdma_start 14_unr_blk_rdma_start.c)
+install(TARGETS 14_unr_blk_rdma_start)
+add_test(NAME unr_blk_rdma_start COMMAND ${LAUNCH_2_CMD} 14_unr_blk_rdma_start)
+
+add_executable(21_unr_blk_rdma_batch_plan 21_unr_blk_rdma_batch_plan.c)
+install(TARGETS 21_unr_blk_rdma_batch_plan)
+add_test(NAME unr_blk_rdma_batch_plan COMMAND ${LAUNCH_2_CMD} 21_unr_blk_rdma_batch_plan)
+
+add_executable(22_unr_blk_rdma_batch_plan_2start 22_unr_blk_rdma_batch_plan_2start.c)
+install(TARGETS 22_unr_blk_rdma_batch_plan_2start)
+add_test(NAME unr_blk_rdma_batch_plan_2start COMMAND ${LAUNCH_2_CMD} 22_unr_blk_rdma_batch_plan_2start)
+
+add_executable(23_unr_blk_rdma_batch_plan_2destroy 23_unr_blk_rdma_batch_plan_2destroy.c)
+install(TARGETS 23_unr_blk_rdma_batch_plan_2destroy)
+add_test(NAME unr_blk_rdma_batch_plan_2destroy COMMAND ${LAUNCH_2_CMD} 23_unr_blk_rdma_batch_plan_2destroy)
+
+add_executable(24_unr_blk_rdma_batch_start 24_unr_blk_rdma_batch_start.c)
+install(TARGETS 24_unr_blk_rdma_batch_start)
+add_test(NAME unr_blk_rdma_batch_start COMMAND ${LAUNCH_2_CMD} 24_unr_blk_rdma_batch_start)
+
+add_executable(31_unr_blk_part_rdma_plan 31_unr_blk_part_rdma_plan.c)
+install(TARGETS 31_unr_blk_part_rdma_plan)
+add_test(NAME unr_blk_part_rdma_plan COMMAND ${LAUNCH_2_CMD} 31_unr_blk_part_rdma_plan)
+
+add_executable(32_unr_blk_part_rdma_plan_2start 32_unr_blk_part_rdma_plan_2start.c)
+install(TARGETS 32_unr_blk_part_rdma_plan_2start)
+add_test(NAME unr_blk_part_rdma_plan_2start COMMAND ${LAUNCH_2_CMD} 32_unr_blk_part_rdma_plan_2start)
+
+add_executable(33_unr_blk_part_rdma_plan_2destroy 33_unr_blk_part_rdma_plan_2destroy.c)
+install(TARGETS 33_unr_blk_part_rdma_plan_2destroy)
+add_test(NAME unr_blk_part_rdma_plan_2destroy COMMAND ${LAUNCH_2_CMD} 33_unr_blk_part_rdma_plan_2destroy)
+
+add_executable(34_unr_blk_part_rdma_start 34_unr_blk_part_rdma_start.c)
+install(TARGETS 34_unr_blk_part_rdma_start)
+add_test(NAME unr_blk_part_rdma_start COMMAND ${LAUNCH_2_CMD} 34_unr_blk_part_rdma_start)
+
+add_executable(41_unr_blk_part_rdma_batch_plan 41_unr_blk_part_rdma_batch_plan.c)
+install(TARGETS 41_unr_blk_part_rdma_batch_plan)
+add_test(NAME unr_blk_part_rdma_batch_plan COMMAND ${LAUNCH_2_CMD} 41_unr_blk_part_rdma_batch_plan)
+
+add_executable(42_unr_blk_part_rdma_batch_plan_2start 42_unr_blk_part_rdma_batch_plan_2start.c)
+install(TARGETS 42_unr_blk_part_rdma_batch_plan_2start)
+add_test(NAME unr_blk_part_rdma_batch_plan_2start COMMAND ${LAUNCH_2_CMD} 42_unr_blk_part_rdma_batch_plan_2start)
+
+add_executable(43_unr_blk_part_rdma_batch_plan_2destroy 43_unr_blk_part_rdma_batch_plan_2destroy.c)
+install(TARGETS 43_unr_blk_part_rdma_batch_plan_2destroy)
+add_test(NAME unr_blk_part_rdma_batch_plan_2destroy COMMAND ${LAUNCH_2_CMD} 43_unr_blk_part_rdma_batch_plan_2destroy)
+
+add_executable(44_unr_blk_part_rdma_batch_start 44_unr_blk_part_rdma_batch_start.c)
+install(TARGETS 44_unr_blk_part_rdma_batch_start)
+add_test(NAME unr_blk_part_rdma_batch_start COMMAND ${LAUNCH_2_CMD} 44_unr_blk_part_rdma_batch_start)
+
+add_executable(45_unr_blk_part_rdma_batch_sync_late 45_unr_blk_part_rdma_batch_sync_late.c)
+install(TARGETS 45_unr_blk_part_rdma_batch_sync_late)
+add_test(NAME unr_blk_part_rdma_batch_sync_late COMMAND ${LAUNCH_2_CMD} 45_unr_blk_part_rdma_batch_sync_late)
+
+add_executable(51_unr_sig_check_with_create1 51_unr_sig_check_with_create1.c)
+install(TARGETS 51_unr_sig_check_with_create1)
+add_test(NAME unr_sig_check_with_create1 COMMAND ${LAUNCH_2_CMD} 51_unr_sig_check_with_create1)
+
+add_executable(52_unr_sig_check_with_create2 52_unr_sig_check_with_create2.c)
+install(TARGETS 52_unr_sig_check_with_create2)
+add_test(NAME unr_sig_check_with_create2 COMMAND ${LAUNCH_2_CMD} 52_unr_sig_check_with_create2)
+
+add_executable(53_unr_sig_reset 53_unr_sig_reset.c)
+install(TARGETS 53_unr_sig_reset)
+add_test(NAME unr_sig_reset COMMAND ${LAUNCH_2_CMD} 53_unr_sig_reset)
+
+add_executable(54_unr_sig_pool_create_and_detect 54_unr_sig_pool_create_and_detect.c)
+install(TARGETS 54_unr_sig_pool_create_and_detect)
+add_test(NAME unr_sig_pool_create_and_detect COMMAND ${LAUNCH_2_CMD} 54_unr_sig_pool_create_and_detect)
+
+add_executable(55_unr_overflow_detect 55_unr_overflow_detect.c)
+install(TARGETS 55_unr_overflow_detect)
+add_test(NAME unr_overflow_detect COMMAND ${LAUNCH_2_CMD} 55_unr_overflow_detect)
+set_tests_properties(unr_overflow_detect PROPERTIES EXPECTED_EXIT_CODE 1)
+set_tests_properties(unr_overflow_detect PROPERTIES PASS_REGULAR_EXPRESSION "Signal overflow detected")

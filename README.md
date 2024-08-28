@@ -1,2 +1,1 @@
-# UNR
-UNR: Unified Notifiable RMA Library for HPC
+# UNR: Unified Notifiable RMA Library for HPC

@@ -1,0 +1,6 @@
+IndentWidth: 4
+IndentCaseLabels: true
+ColumnLimit: 0
+NamespaceIndentation: All
+PointerAlignment: Left
+IndentPPDirectives: BeforeHash

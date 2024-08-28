@@ -1,0 +1,1 @@
+int uru_trace_stack_depth=0;
